@@ -1,0 +1,18 @@
+## Single AI Agent – Google Calendar (n8n)
+
+This workflow implements a single AI Agent using n8n that can:
+- Retrieve Google Calendar events
+- Create new calendar events
+- Delete existing events
+
+### Key Features
+- Single AI Agent orchestration
+- Natural language → calendar actions
+- Start & End times inferred automatically by AI
+- No-code automation using n8n
+
+### How to use
+1. Import the JSON into n8n
+2. Configure Google Calendar OAuth credentials
+3. Add OpenAI / Mistral API key
+4. Activate workflow and test via Chat Trigger

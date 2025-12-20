@@ -1,0 +1,55 @@
+ # Agentic AI — Tool Calling (Function Calling)
+
+This repository contains a **Google Colab notebook** demonstrating **Tool / Function Calling with LLMs** using OpenAI’s API.
+
+The notebook shows how an LLM can **decide to call an external tool**, receive its output, and generate a final response — a core concept behind **Agentic AI systems**.
+
+---
+
+## What’s Inside
+
+* Custom tool: `letter_counter`
+* LLM decides **when** to use the tool
+* Structured arguments passed to the tool
+* Tool output returned to the LLM
+* Final natural-language response generated
+
+Example:
+
+> *How many ‘r’s are in “Strawberry”?* → **3**
+
+---
+
+## Why This Matters
+
+Tool calling enables LLMs to:
+
+* Perform actions, not just generate text
+* Orchestrate workflows
+* Act as intelligent agents (LangChain, LangGraph, n8n patterns)
+
+---
+
+## Notebook
+
+**`Agentic_AI_Tool_Calling_Letter_Counter.ipynb`**
+
+Open in Colab after pushing to GitHub:
+
+```
+https://colab.research.google.com/github/<username>/<repo>/blob/main/Agentic_AI_Tool_Calling_Letter_Counter.ipynb
+```
+
+---
+
+## Prerequisite
+
+Set your API key:
+
+```bash
+export OPENAI_API_KEY="your_api_key_here"
+```
+
+
+
+* Add a **one-image architecture diagram**

@@ -1,0 +1,56 @@
+# 🧠 Agentic AI – LangChain Agents (Minimal Demo)
+
+This repository contains a **minimal working example of Agentic AI** using **LangChain Agents**.
+
+It demonstrates how an AI system can:
+
+* reason about a task,
+* decide to use a tool,
+* execute the tool,
+* and produce a final answer.
+
+---
+
+## 🔍 What’s Inside
+
+* **Theory-first notebook** explaining Agentic AI
+* **ReAct-based agent** with an explicit execution loop
+* **Single tool use case** (multiplier) to clearly show decision-making
+* **Secure API key handling** (no hardcoding)
+
+---
+
+## 🧠 Mental Model
+
+```
+User Input
+ → LLM reasons
+ → Agent selects action
+ → AgentExecutor executes tool
+ → Observation
+ → Final Answer
+```
+
+**Agent decides.
+Tool executes.
+AgentExecutor runs the loop.**
+
+---
+
+## ▶️ How to Run
+
+1. Open the notebook in **Google Colab**
+2. Add your OpenAI key in **Colab Secrets** as `OPENAI_KEY`
+3. Run all cells top to bottom
+
+---
+
+## 📚 References
+
+* [https://python.langchain.com/docs/concepts/agents/](https://python.langchain.com/docs/concepts/agents/)
+* [https://arxiv.org/abs/2210.03629](https://arxiv.org/abs/2210.03629)
+
+---
+
+Minimal by design.
+Built to understand **Agentic AI fundamentals** before scaling to complex workflows.

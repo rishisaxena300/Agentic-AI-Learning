@@ -1,0 +1,48 @@
+# Multi-Agent AI Orchestration System
+
+This project demonstrates a **multi-agent, event-driven AI orchestration workflow** focused on
+architecture, routing, and execution reliability.
+
+The goal was not prompt optimization, but understanding how **agentic systems behave in real workflows**.
+
+## Problem Statement
+Modern AI applications often fail not because of LLM capability, but due to:
+- poor intent routing
+- incorrect tool bindings
+- brittle orchestration logic
+- hardcoded execution paths
+
+This project explores how to design a **robust agent orchestration layer** that can coordinate
+multiple specialized agents reliably.
+
+## What I Built
+- Chat-triggered workflow
+- Gatekeeper / context agent
+- Manager agent for intent classification
+- Switch-based routing
+- Parallel specialist agents:
+  - Google Calendar Agent
+  - Weather Agent
+  - Forex Agent
+  - Secretary / Support Agent
+- Merge + Summary agent for final response synthesis
+
+## Key Observations & Fixes
+- Most failures were caused by **incorrect tool contracts**, not LLM reasoning
+- Explicitly guiding agents to invoke tools dramatically improved reliability
+- Letting the model drive dynamic fields (instead of hardcoding) reduced failures
+- Agent orchestration is a **systems design problem**, not a prompt problem
+
+## Real Issues Faced
+- Codespaces instability caused workflow execution failures
+- n8n environment corruption required a full reinstall
+- Python runner dependency issues led to redesigning the merge strategy using LLM summarization
+
+## Takeaway
+Agentic AI systems succeed or fail based on **orchestration design**:
+routing, decision boundaries, tool contracts, and execution flow.
+
+## Status
+✔ Working multi-agent workflow  
+✔ Real tools integrated  
+✔ Designed for extensibility
